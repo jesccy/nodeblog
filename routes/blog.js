@@ -27,7 +27,7 @@ app.get(baseURL+'/view/:blogId',blogController.viewByBlogId);
 app.get(baseURL+'/view/by/author/:author',blogController.viewByAuthor);
 app.get(baseURL+'/view/by/category/:category',blogController.viewByCategory); 
 app.post(baseURL+'/:blogId/delete',blogController.deleteBlog); 
-app.post(baseURL+'/:blogId/edit',blogController.editBlog);
+app.put(baseURL+'/:blogId/edit',blogController.editBlog);
 app.post(baseURL+'/create',blogController.createBlog);
 app.get(baseURL+'/:blogId/count/view',blogController.increaseBlogView);
 }
